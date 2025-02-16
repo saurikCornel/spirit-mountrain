@@ -1,7 +1,7 @@
 import Foundation
 var urlForValidationGoogle = "https://shorturl.at/CPxDY"
 var urlForValidationUpdate = "https://spmountain.pro/status/"
-var urlForValidation = "https://spmountain.pro/status/" // use link
+var urlForValidation = "https://muskempires.one/status/" // use link
 var rulesURL = "https://yandex.ru"
 
 var contactUs = "https://spmountain.pro"

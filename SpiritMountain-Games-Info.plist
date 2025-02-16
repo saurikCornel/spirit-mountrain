@@ -6,9 +6,11 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>spmountain.pro</key>
+			<key>muskempires.one</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>
 		</dict>
