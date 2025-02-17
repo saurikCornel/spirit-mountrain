@@ -9,16 +9,19 @@ struct GameSecondView: View {
     var body: some View {
                 GeometryReader { geo in
                     let isLandscape = geo.size.width > geo.size.height
+                    
                    if isLandscape {
                        ZStack {
                            Color(hex: "#59A16A")
                                .edgesIgnoringSafeArea(.all)
                            
+                         
                            // Показываем WebView всегда, но скрываем его под черным экраном во время загрузки
                            WebView(url: "https://plays.org/game/mountain-rider/")
-                               .edgesIgnoringSafeArea(.all)
-                               .scaleEffect(1.4)
-                               .opacity(isWebViewLoaded ? 1 : 0) // Скрываем WebView, пока загрузка не завершена
+                               .frame(width: geo.size.width * 0.9, height: geo.size.height)
+//                               .edgesIgnoringSafeArea(.all)
+//                               .scaleEffect(1.4)
+//                               .opacity(isWebViewLoaded ? 1 : 0) // Скрываем WebView, пока загрузка не завершена
                            
                            if !isWebViewLoaded {
                                ZStack {
